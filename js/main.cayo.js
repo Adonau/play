@@ -1,0 +1,3 @@
+$(document).ready(function(){$(".ca-main-slider").slick({dots:!1,arrows:!1,infinite:!0,autoplay:!0,fade:!0,autoplaySpeed:4e3,speed:700,slidesToShow:1,adaptiveHeight:!0}),$(".ca-crafting__slider").slick({infinite:!0,autoplay:!0,speed:700,slidesToShow:3,slidesToScroll:1,responsive:[{breakpoint:1e3,settings:{slidesToShow:2}},{breakpoint:750,settings:{slidesToShow:1}}]}),$(".ca-header__button").click(function(){$(".ca-header__button").toggleClass("ca-header__button-transform"),$(".ca-header-t").toggleClass("ca-header-t__transform")}),$(".ca-header-t__button").click(function(){$(".ca-header-t").toggleClass("ca-header-t__transform"),$(".ca-header__button").toggleClass("ca-header__button-transform")})});
+
+
