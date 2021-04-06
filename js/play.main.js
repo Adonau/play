@@ -32,8 +32,7 @@ $(document).ready(function () {
         centerPadding: '60px',
         slidesToShow: 4,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 810,
                 settings: {
                     arrows: false,
@@ -69,8 +68,7 @@ $(document).ready(function () {
         centerPadding: '60px',
         slidesToShow: 4,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 810,
                 settings: {
                     arrows: false,
@@ -104,8 +102,7 @@ $(document).ready(function () {
         centerPadding: '60px',
         slidesToShow: 5,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 810,
                 settings: {
                     arrows: false,

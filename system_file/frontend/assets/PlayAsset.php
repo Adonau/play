@@ -19,6 +19,7 @@ class PlayAsset extends AssetBundle
         '//code.jquery.com/jquery-migrate-1.2.1.min.js',
         'js/slick.min.js',
         'js/parallax.min.js',
+        'js/main.js',
         'js/play.main.js',
     ];
 

@@ -18,6 +18,7 @@ class CayoAsset extends AssetBundle
         'https://kit.fontawesome.com/e825825160.js',
         '//code.jquery.com/jquery-migrate-1.2.1.min.js',
         'js/slick.min.js',
+        'js/main.js',
         'js/main.cayo.js'
     ];
     public $depends = [

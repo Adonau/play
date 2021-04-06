@@ -8,7 +8,7 @@
 
     transition: 0.3s all ease;
 
-    background: #fff;
+    background: #ecf0f1;
 }
 
 .p-header--transform {
@@ -154,9 +154,6 @@
     transform: translateY(30px);
 
     transition: 0.3s opacity ease, 0.3s transform ease, 0.3s visibility ease;
-
-    &__item {
-    }
 
     &__link {
         display: flex;

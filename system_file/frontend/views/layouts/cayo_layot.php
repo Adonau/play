@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use frontend\assets\CayoAsset;
-
+use frontend\widgets\PreloadWidget;
 CayoAsset::register($this);
 
 ?>
@@ -24,7 +24,7 @@ CayoAsset::register($this);
     <?php $this->beginBody() ?>
 
     <?= $content ?>
-
+    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

@@ -25,4 +25,11 @@ class PortfolioController extends \yii\web\Controller
         return $this->render('play');
     }
 
+    public function actionTattoo()
+    {
+        $this->layout = '@app/views/layouts/tatto_layout.php';
+
+        return $this->render('tattoo');
+    }
+
 }

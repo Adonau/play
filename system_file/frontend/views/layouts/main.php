@@ -4,13 +4,10 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use yii\bootstrap\Nav;
-use yii\bootstrap\NavBar;
-use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
-use frontend\widgets\AsideWidget;
-use frontend\widgets\FooterWidget;
+
 use frontend\widgets\HeaderWidget;
+use frontend\widgets\PreloadWidget;
 
 AppAsset::register($this);
 ?>
@@ -22,9 +19,15 @@ AppAsset::register($this);
     <meta charset="<?= Yii::$app->charset ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $this->registerCsrfMetaTags() ?>
+
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
+
+    <link rel="canonical" href="https://design-wt.ru/">
+    <meta name="description" content="Портфолио">
+    <meta name="keywords" content="Портфолио">
+
+    <?php $this->registerCsrfMetaTags() ?>
 </head>
 
 <body class="main-body">
@@ -32,6 +35,7 @@ AppAsset::register($this);
     <?= HeaderWidget::widget() ?>
     <?= $content ?>
 
+    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

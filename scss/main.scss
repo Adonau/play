@@ -1,6 +1,7 @@
 @import "var";
 @import "normalize";
 @import "common";
+@import "preload";
 @import "fonts";
 @import "header";
 @import "pot-header";
@@ -10,15 +11,18 @@
 @import "intro";
 @import "aside";
 @import "footer";
-@import "media_main/media_1260";
-@import "media_main/media_1024";
-@import "media_main/media_750";
+@import "media_1260";
+@import "media_1024";
+@import "media_750";
 
 @import "unc/unconq";
 @import "cayo/cayo";
 @import "cayo/cayo-media";
 @import "play/play";
 @import "play/play.media";
+
+@import "tattoo/tattoo";
+@import "tattoo/tattoo.media";
 
 
 

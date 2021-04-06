@@ -6,7 +6,7 @@ use frontend\assets\AppAsset;
 use frontend\widgets\PortfolioHeaderWidget;
 use frontend\widgets\PortfolioIntroWidget;
 use frontend\widgets\FooterWidget;
-
+use frontend\widgets\PreloadWidget;
 
 AppAsset::register($this);
 
@@ -33,6 +33,7 @@ AppAsset::register($this);
     <?= $content ?>
 
     <?= FooterWidget::widget() ?>
+    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

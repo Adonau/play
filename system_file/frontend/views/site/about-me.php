@@ -1,25 +1,36 @@
 <div class="about-me">
+    <h1 class="about-me__title">Обо мне</h1>
+
+    <p class="about-me__text">Здравствуйте, меня зовут Шарапов Глеб мне 31 год, имею опыт в вёрстке и программировании более трёх лет, как в реальных проектах, так и размещённых локально для повышения квалификации.</p>
+    <p class="about-me__text">Также имеется опыт SEO-оптимизации в личном проекте, сбор ключей, подготовка текста. Опыт вывода сч-запросов в топ-3. Работа с функционалом Яндекс-метрики и Гугл-аналитики.</p>
 
     <div class="about-me__inner">
-        <h1 class="about-me__title">Вкратце о навыках</h1>
+        <h2 class="about-me__title">Вкратце о навыках</h2>
+
         <ul class="about-me__list">
-            <li class="about-me__item ">HTML - Отличное знание</li>
-            <li class="about-me__item">CSS - Отличное знание</li>
-            <li class="about-me__item">SCSS - Хорошое знание. В основном использую переменные и математические расчёты.</li>
-            <li class="about-me__item">БЭМ - Из методологии использую нейминг.</li>
-            <li class="about-me__item">Figma - На уровне резки макета.</li>
-            <li class="about-me__item">Photoshop - На уровне резки макета.</li>
-            <li class="about-me__item about-me__item-margin">Avocod - На уровне резки макета.</li>
+            <li class="about-me__item ">HTML</li>
+            <li class="about-me__item">CSS</li>
+            <li class="about-me__item">SCSS</li>
+            <li class="about-me__item">БЭМ</li>
+        </ul>
 
-            <li class="about-me__item">JS - На уровне использования чужого кода.</li>
-            <li class="about-me__item">JQuery - На уровне использования чужого кода, написание небольших фрагментов своего.</li>
-            <li class="about-me__item about-me__item-margin">Gulp - Использование необходимого мне функционала.</li>
+        <ul class="about-me__list about-me__margin">
+            <li class="about-me__item">Figma</li>
+            <li class="about-me__item">Photoshop</li>
+            <li class="about-me__item">Avocod</li>
+            <li class="about-me__item">Git</li>
+        </ul>
 
-            <li class="about-me__item">PHP - Не удавлетворят моему желаниям, но гугл помогает.</li>
-            <li class="about-me__item">YII2 - На уровне использование функционала фреймворка.</li>
-            <li class="about-me__item about-me__item-margin">MySQL - На уровне работы с базами данных, выборка.</li>
+        <ul class="about-me__list">
+            <li class="about-me__item">JS</li>
+            <li class="about-me__item">JQuery</li>
+            <li class="about-me__item">Gulp</li>
+        </ul>
 
-            <li class="about-me__item">SEO - Сбор ключей, семантическая вёрстка, написания семантического текста, иерархия заголовков. Опыт вывода сч-запросов в топ 3.</li>
+        <ul class="about-me__list">
+            <li class="about-me__item">PHP</li>
+            <li class="about-me__item">YII2</li>
+            <li class="about-me__item">MySQL</li>
         </ul>
 
         <div class="about-me__contact">

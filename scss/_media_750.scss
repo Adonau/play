@@ -1,0 +1,34 @@
+@media screen and (max-width: 750px) {
+    .portfolio__link {
+        width: 100%;
+        height: 600px;
+    }
+
+    .about-me {
+        padding: 0 20px;
+    }
+
+    .about-me__title {
+       font-size: 1.5em;
+    }
+
+    .about-me__item {
+        font-size: 0.9em;
+     }
+
+     .about-me__contact {
+         flex-direction: column;
+     }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .about-me {
+        padding: 0 20px;
+        padding-top: 120px;
+    }
+
+    .about-me__inner {
+        margin-bottom: 120px;
+    }
+}

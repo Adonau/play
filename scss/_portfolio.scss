@@ -1,6 +1,8 @@
 .portfolio-body {
     font-family: "Ow";
 
+    background-color:#ecf0f1;
+
     &__intro {
         display: flex;
         flex-direction: column;
@@ -26,7 +28,7 @@
     }
 
     &__intro-text {
-        width: 900px;
+        max-width: 900px;
 
         text-align: center;
         font-family: "Ow-el";
@@ -69,18 +71,17 @@
     &__image {
         position: relative;
         display: flex;
-
+        justify-content: center;
+        align-items: center;
+        
         width: 100%;
         height: 100%;
 
-        background-size: 110%;
-        background-position: center 0;
+        background-size: cover;
+        background-position: center top;
         background-repeat: no-repeat;
-        background-attachment: scroll;
 
         transition: 3s all ease, 0.5s background-size ease;
-
-        background-color: $gray;
     }
 
     &__eye {
@@ -96,6 +97,8 @@
         height: 100%;
 
         transition: 0.5s all ease;
+
+        background: rgba(#000, 0.1);
 
         & .fa {
             color: #fff;
@@ -117,37 +120,19 @@
     &__text-wrap {
         z-index: 1;
         position: absolute;
-        bottom: 30px;
-        left: 30px;
+        bottom: 40px;
 
         display: flex;
         flex-direction: column;
 
-        width: 80%;
+        width: 90%;
 
         padding: 10px 0;
         padding-left: 40px;
 
         transition: 0.8s all ease;
 
-        &::after {
-            z-index: 1;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            display: flex;
-
-            width: 100%;
-            height: 100%;
-
-            transform: skew(-20deg);
-
-            box-shadow: 0 6px 10px 2px #000;
-
-            background: #fff;
-        }
+        background-color: #ecf0f1;
     }
 
     &__desc {
@@ -170,7 +155,7 @@
     }
 
     &__link:hover &__eye {
-        background: rgba(#000, 0.5);
+        background: rgba(#000, 0.4);
     }
 }
 
@@ -178,42 +163,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 
-    padding-left: 320px;
-
+    padding: 0 30px;
     background-color: #121212;
     color: #fff;
 
     font-family: "Ow-el";
 
-    &__inner {
+    &__title {
         width: 100%;
-        max-width: 600px;
+        max-width: 400px;
 
-        margin-left: 60px;
+        margin: 20px 0;
     }
 
-    &__title {
-        margin-bottom: 30px;
+    &__text {
+        max-width: 400px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
     }
 
     &__list {
         display: flex;
-        flex-direction: column;
     }
 
     &__item {
-        margin-bottom: 4px;
+        margin-right: 4px;
 
         &:last-child {
             margin-bottom: 0;
         }
     }
 
-    &__item-margin {
-        margin-bottom: 30px;
+    &__margin {
+        margin-bottom: 10px;
     }
 
     &__text-wrap {

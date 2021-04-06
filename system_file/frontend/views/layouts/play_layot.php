@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use frontend\assets\PlayAsset;
+use frontend\widgets\PreloadWidget;
 
 PlayAsset::register($this);
 
@@ -24,7 +25,7 @@ PlayAsset::register($this);
     <?php $this->beginBody() ?>
 
     <?= $content ?>
-
+    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

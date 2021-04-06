@@ -1,10 +1,8 @@
 <?php
-
-
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 
-$this->title = 'Ожидание контента';
+$this->title = 'Портфолио в ожидании контента';
 ?>
 
 
@@ -13,6 +11,8 @@ $this->title = 'Ожидание контента';
         <div class="intro__text-container">
             <h1 class="intro__title"> <?= $index->h1_title; ?> </h1>
             <a class="intro__link" href="<?= Url::to(['/portfolio']) ?>"><?= $index->link_text; ?></a>
+
+            <a class="intro__link" href="<?= Url::to(['/about-me']) ?>">В кратце о навыках</a>
         </div>
     <?php endforeach; ?>
 

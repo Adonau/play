@@ -1,11 +1,3 @@
-<div class="pl-preload">
-    <div class="pl-preload__item"></div>
-    <div class="pl-preload__item"></div>
-    <div class="pl-preload__item"></div>
-    <div class="pl-preload__item"></div>
-    <div class="pl-preload__item"></div>
-</div>
-
 <header class="pl-header">
 
     <div class="pl-header__inner">

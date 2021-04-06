@@ -1,0 +1,18 @@
+@media screen and (max-width: 1260px) {
+
+    .portfolio-body {
+        padding: 0 20px;
+        
+        &__intro-title {
+            font-size: 4em;
+        }
+
+        &__intro-undertitle {  
+            font-size: 1em;
+        }
+    }
+
+    .portfolio__link {
+        width: 47%;
+    }
+}

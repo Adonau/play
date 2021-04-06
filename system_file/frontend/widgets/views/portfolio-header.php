@@ -1,4 +1,4 @@
-<header class="portfolio-header portfolio-header-tampl">
+<header class="portfolio-header">
     <nav class="portfolio-nav">
         <a href="/" class="portfolio-logo">Design-wt</a>
         
