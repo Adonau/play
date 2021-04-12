@@ -117,6 +117,6 @@
 
 .portfolio-preload-transform {
     opacity: 0;
-    visibility: hidden;
-    transition: 1s opacity ease, 0.8s visibility ease;
+    transform: translateY(100%);
+    transition: 0.6s opacity ease, 0.8s transform ease;
 }

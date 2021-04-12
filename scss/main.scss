@@ -8,8 +8,10 @@
 @import "portfolio";
 @import "slick";
 @import "slick-theme";
-@import "intro";
-@import "aside";
+
+// стили главной страницы
+@import "main_page";
+
 @import "footer";
 @import "media_1260";
 @import "media_1024";
@@ -23,6 +25,8 @@
 
 @import "tattoo/tattoo";
 @import "tattoo/tattoo.media";
+
+@import "fashon";
 
 
 

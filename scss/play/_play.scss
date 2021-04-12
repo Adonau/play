@@ -523,6 +523,7 @@
 .pl-intro {
     width: 100%;
     height: 780px;
+    min-height: 780px;
 
     &__text-container {
         z-index: 5;
@@ -1175,7 +1176,7 @@
         transition: 0.3s all ease;
 
         &:hover {
-            background-color: $pl-lg-fiol + 10%;
+            background-color: $pl-lg-fiol-lth;
         }
     }
 

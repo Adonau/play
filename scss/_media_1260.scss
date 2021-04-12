@@ -1,13 +1,29 @@
 @media screen and (max-width: 1260px) {
+    .header {
+        transform: translate(-100%);
+    }
+
+    .header-media {
+        display: flex;
+        transform: translate(0);
+    }
+
+    .button-gam {
+        display: flex;
+    }
+
+    .section-main {
+        padding-left: 0;
+    }
 
     .portfolio-body {
         padding: 0 20px;
-        
+
         &__intro-title {
             font-size: 4em;
         }
 
-        &__intro-undertitle {  
+        &__intro-undertitle {
             font-size: 1em;
         }
     }

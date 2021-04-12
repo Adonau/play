@@ -32,4 +32,11 @@ class PortfolioController extends \yii\web\Controller
         return $this->render('tattoo');
     }
 
+    public function actionFashon()
+    {
+        $this->layout = '@app/views/layouts/fashon_layout.php';
+
+        return $this->render('fashon');
+    }
+
 }

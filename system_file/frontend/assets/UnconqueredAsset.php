@@ -19,6 +19,7 @@ class UnconqueredAsset extends AssetBundle
         'js/main.js',
         'js/main.unc.js',
         'js/parallax.min.js',
+        'js/main.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',

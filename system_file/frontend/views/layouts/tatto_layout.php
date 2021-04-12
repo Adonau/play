@@ -2,7 +2,7 @@
 
 use yii\helpers\Html;
 use frontend\assets\TattooAsset;
-
+use frontend\widgets\PreloadWidget;
 TattooAsset::register($this);
 
 ?>
@@ -24,7 +24,8 @@ TattooAsset::register($this);
     <?php $this->beginBody() ?>
 
     <?= $content ?>
-
+    
+    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

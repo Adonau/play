@@ -61,7 +61,7 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [ 
-                '' => 'site/index',
+                 '' => 'site/index',
                 '<_a:[\w\-]+>' => 'site/<_a>'
             ],
         ],
