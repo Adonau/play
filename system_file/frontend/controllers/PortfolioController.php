@@ -39,4 +39,11 @@ class PortfolioController extends \yii\web\Controller
         return $this->render('fashon');
     }
 
+    public function actionPandemic()
+    {
+        $this->layout = '@app/views/layouts/pandemic_layout.php';
+
+        return $this->render('pandemic');
+    }
+
 }

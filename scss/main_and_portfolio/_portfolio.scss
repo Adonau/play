@@ -1,0 +1,231 @@
+.portfolio-body {
+    font-family: "Ow";
+
+    background-color:#ecf0f1;
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        margin: 120px 0;
+    }
+
+    &__intro-title {
+        font-size: 6em;
+    }
+
+    &__intro-undertitle {
+        margin-bottom: 30px;
+
+        font-size: 1.2em;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $black;
+        text-align: center;
+    }
+
+    &__intro-text {
+        max-width: 900px;
+
+        text-align: center;
+        font-family: "Ow-el";
+        font-size: 1.1em;
+        color: $gray;
+    }
+}
+
+.portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1280px;
+    margin-bottom: 100px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    &__link {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+        width: 31.7%;
+        height: 500px;
+        margin: 10px;
+    }
+
+    &__image {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width: 100%;
+        height: 100%;
+
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+
+        transition: 3s all ease, 0.5s background-size ease;
+    }
+
+    &__eye {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        transition: 0.5s all ease;
+
+        background: rgba(#000, 0.1);
+
+        & .fa {
+            color: #fff;
+            padding: 16px;
+            font-size: 1.8em;
+
+            border-radius: 50%;
+            border: 3px solid #fff;
+
+            transform: scale(1.6);
+            opacity: 0;
+
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            transition: 0.4s all ease;
+        }
+    }
+
+    &__text-wrap {
+        z-index: 1;
+        position: absolute;
+        bottom: 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        width: 90%;
+
+        padding: 10px 0;
+        padding-left: 40px;
+
+        transition: 0.8s all ease;
+
+        background-color: #ecf0f1;
+    }
+
+    &__desc {
+        z-index: 2;
+        color: $gray;
+
+        transition: 0.5s all ease;
+    }
+
+    &__main-word {
+        z-index: 2;
+        font-size: 1.6em;
+        color: $black;
+        transition: 0.5s all ease;
+    }
+
+    &__link:hover .fa {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &__link:hover &__eye {
+        background: rgba(#000, 0.4);
+    }
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    padding: 0 30px;
+    background-color: #121212;
+    color: #fff;
+
+    font-family: "Ow-el";
+
+    &__title {
+        width: 100%;
+        max-width: 400px;
+
+        margin: 20px 0;
+    }
+
+    &__text {
+        max-width: 400px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 4px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__margin {
+        margin-bottom: 10px;
+    }
+
+    &__text-wrap {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    &__contact {
+        display: flex;
+        margin-top: 30px;
+    }
+
+    &__tell,
+    &__mail {
+        color: #fff;
+        margin-right: 40px;
+        font-size: 0.9em;
+        transition: 0.3s all ease;
+
+        &:hover {
+            color: $gray;
+        }
+    }
+}

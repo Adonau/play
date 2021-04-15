@@ -14,21 +14,18 @@
 
             <li class="nav__item">
                 <a class="nav__link" href="#main">
-                    <i class="nav__icon fa fa-home" aria-hidden="true"></i>
                     <span class="nav__name">Главная</span>
                 </a>
             </li>
 
             <li class="nav__item">
                 <a class="nav__link" href="#skills">
-                    <i class="nav__icon fa fa-cogs" aria-hidden="true"></i>
                     <span class="nav__name">Навыки</span>
                 </a>
             </li>
 
             <li class="nav__item">
                 <a class="nav__link" href="/portfolio">
-                    <i class="nav__icon fa fa-server" aria-hidden="true"></i>
                     <span class="nav__name">Портфолио</span>
                 </a>
             </li>

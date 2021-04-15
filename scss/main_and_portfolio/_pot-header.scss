@@ -1,0 +1,187 @@
+.link-not {
+    text-decoration: line-through;
+}
+
+.portfolio-header {
+    z-index: 2;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+
+    width: 100%;
+    height: 80px;
+
+    transition: 0.3s all ease;
+
+    background: #fff;
+}
+
+.p-header--transform {
+    z-index: 9999999;
+    position: fixed;
+    height: 60px;
+
+    & .portfolio-list-drop {
+        position: absolute;
+        top: 60px;
+    }
+}
+
+.p-button-gam {
+    z-index: 5;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 30px;
+    height: 30px;
+
+    background: transparent;
+    outline: none;
+    border: none;
+
+    cursor: pointer;
+
+    &__line {
+        display: block;
+        width: 100%;
+        height: 0.2em;
+
+        background: $black;
+
+        transition: 0.3s all ease;
+    }
+}
+
+.portfolio-logo {
+    z-index: 5;
+    font-family: "Shoul";
+    font-size: 2em;
+    color: $black;
+}
+
+.portfolio-nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1260px;
+
+    &__list {
+        display: flex;
+
+        height: 100%;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            content: "";
+            width: 0.1em;
+            height: 20px;
+
+            background: #101010;
+
+            transform: translateX(-20px);
+            opacity: 0;
+            transition: 0.3s all ease;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            transform: translateX(20px);
+        }
+    }
+
+    &__name {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        width: 100%;
+        height: 100%;
+
+        font-family: "Ow-el";
+        color: $black;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    &__name-arrow {
+        display: flex;
+
+        &::after {
+            content: "\f105";
+
+            font-family: fontawesome;
+            font-size: 1.2em;
+
+            margin-left: 10px;
+            transition: 0.3s all ease;
+            color: $gray;
+        }
+    }
+
+    &__item:hover &__name-arrow::after {
+        transform: rotate(90deg) translate(4px);
+    }
+}
+
+.portfolio-list-drop {
+    position: absolute;
+    top: 80px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    min-width: 200px;
+
+    padding: 20px;
+
+    background: #101010;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+
+    transition: 0.3s opacity ease, 0.3s transform ease, 0.3s visibility ease;
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        padding: 3px 10px;
+
+        color: $white;
+        font-size: 0.8em;
+        font-family: "Ow-el";
+        letter-spacing: 3px;
+
+        transition: 0.3s all ease;
+
+        &:hover {
+            background-color: $gray;
+            color: #fff;
+        }
+    }
+}
+
+.portfolio-nav__item:hover .portfolio-list-drop {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}

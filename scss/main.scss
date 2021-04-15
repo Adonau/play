@@ -1,32 +1,33 @@
-@import "var";
-@import "normalize";
-@import "common";
-@import "preload";
-@import "fonts";
-@import "header";
-@import "pot-header";
-@import "portfolio";
-@import "slick";
-@import "slick-theme";
+// общие стили
+@import "common/var";
+@import "common/normalize";
+// @import "common/preload";
+@import "common/fonts";
+// главная - портфолио
+@import "main_and_portfolio/header";
+@import "main_and_portfolio/pot-header";
+@import "main_and_portfolio/portfolio";
+// слайдер тема не нужна, но пусть пока стоит
+@import "slider/slick";
+@import "slider/slick-theme";
+// главная - портфолио
+@import "main_and_portfolio/main_page";
+@import "main_and_portfolio/footer";
+@import "main_and_portfolio/media_1260";
+@import "main_and_portfolio/media_1024";
+@import "main_and_portfolio/media_750";
 
-// стили главной страницы
-@import "main_page";
-
-@import "footer";
-@import "media_1260";
-@import "media_1024";
-@import "media_750";
-
+// макеты
 @import "unc/unconq";
 @import "cayo/cayo";
 @import "cayo/cayo-media";
 @import "play/play";
 @import "play/play.media";
-
 @import "tattoo/tattoo";
 @import "tattoo/tattoo.media";
-
-@import "fashon";
+@import "fashon/fashon";
+@import "pandemic/pandemic";
+@import "pandemic/pandemic.media";
 
 
 

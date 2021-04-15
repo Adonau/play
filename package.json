@@ -1,5 +1,5 @@
 {
-  "name": "public_file",
+  "name": "design-wt",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,8 @@
   },
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1"
   },
   "keywords": [],

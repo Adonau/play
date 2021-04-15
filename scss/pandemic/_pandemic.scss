@@ -1,0 +1,1023 @@
+.pandemic-body {
+    font-family: "Ow";
+    background: $dark-blue;
+}
+.pan-button {
+    padding: 10px 80px;
+
+    font-size: 1.2em;
+    color: #fff;
+
+    border: 2px solid $pan-green;
+    border-radius: 0px 40px 0px 40px;
+    text-transform: uppercase;
+    transition: 0.3s all ease;
+
+    &:hover {
+        color: #000;
+        background: $pan-green;
+    }
+}
+.pan-setion-img {
+    position: relative;
+    width: 100%;
+
+    background-size: cover;
+    background-position: top center;
+
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+
+        background: rgba($dark-blue, 0.9);
+    }
+
+    &__inner {
+        display: flex;
+
+        width: 100%;
+        height: 100%;
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 200px;
+
+            background: linear-gradient(to bottom, rgba($dark-blue, 1), rgba($dark-blue, 0.1));
+        }
+
+        &::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: "";
+            width: 100%;
+            height: 200px;
+
+            background: linear-gradient(to top, rgba($dark-blue, 1), rgba($dark-blue, 0.1));
+        }
+    }
+}
+// хедер
+.pan-header {
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1420px;
+
+        padding: 20px 0;
+    }
+
+    &__logo {
+        margin-right: 100px;
+    }
+
+    &__button {
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+
+        background: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__line {
+        display: block;
+        width: 100%;
+        height: 0.1em;
+
+        background: #fff;
+
+        transition: 0.3s all ease;
+        &:nth-child(2) {
+            width: 50%;
+        }
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin-right: 40px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 0.9em;
+        color: #fff;
+
+        transition: 0.3s color ease;
+        &:hover {
+            color: $pan-green;
+        }
+    }
+}
+.pan-header__button-transform {
+    .pan-header__line {
+        &:nth-child(1),
+        &:nth-child(3) {
+            width: 50%;
+        }
+
+        &:nth-child(2) {
+            width: 100%;
+        }
+    }
+}
+
+.pan-header__nav-transform {
+    z-index: 999999999999;
+    display: flex;
+    position: absolute;
+
+    background: #000;
+}
+
+.pan-header--transform {
+    background: $dark-blue;
+    border-bottom: 2px solid $dark-blue + 10%;
+}
+// враппер
+.pan-wrapper {
+    width: 100%;
+    max-width: 1920px;
+}
+// секция с видео
+.pan-section-video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    max-height: 1000px;
+
+    overflow: hidden;
+
+    &::before,
+    &::after {
+        z-index: 1;
+        content: "";
+        position: absolute;
+        bottom: -400px;
+
+        border: 300px solid transparent;
+    }
+
+    &::before {
+        left: 0;
+        border-left: 1500px solid $dark-blue;
+    }
+
+    &::after {
+        right: 0;
+        border-right: 1500px solid $dark-blue;
+    }
+
+    &__text-wrap {
+        z-index: 10;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+
+        background: rgba($dark-blue, 0.6);
+    }
+
+    &__logo-wrap {
+        width: 60%;
+    }
+
+    &__logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.pan-video {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 140%;
+
+    object-fit: cover;
+}
+// секция со слайдером
+.pan-section-slider {
+    padding: 200px 0;
+    margin-bottom: 100px;
+    background-image: url(/image/pandemic/section_bg/bg12.jpg);
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+
+        border: 400px solid transparent;
+        border-left: 400px solid rgba($pan-green, 0.6);
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.pan-slider-large {
+    z-index: 10;
+
+    width: 1000px;
+    height: 600px;
+
+    box-shadow: 2px 0 20px 2px #000;
+
+    &__image-wrap {
+        position: relative;
+        width: 1000px;
+        height: 600px;
+        outline: none;
+        border: 10px solid $dark-blue + 10%;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    &__text-wrap {
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+
+        display: flex;
+        flex-direction: column;
+
+        &::after {
+            content: "";
+
+            width: 60px;
+            height: 10px;
+
+            margin-top: 40px;
+
+            background: $pan-green;
+        }
+    }
+
+    &__text {
+        font-size: 3.4em;
+        color: #fff;
+    }
+}
+// перезапись стилей нижних кнопок слайдера и стрелок
+.slick-arrow {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    &::before {
+        font-size: 3em;
+    }
+
+    &:hover::before {
+        color: $pan-green;
+    }
+}
+.slick-prev {
+    left: -90px;
+
+    &::before {
+        content: "\f104";
+        font-family: fontawesome;
+    }
+}
+.slick-next {
+    right: -90px;
+    &::before {
+        content: "\f105";
+        font-family: fontawesome;
+    }
+}
+.slick-dots {
+    display: flex;
+    bottom: -40px;
+}
+.slick-dots li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4px;
+    margin: 0;
+    background-color: $dark-blue + 10%;
+}
+.slick-dots li button {
+    width: 0;
+    height: 6px;
+    padding: 0;
+    background-color: $pan-green;
+
+    transition: 0.3s all ease;
+
+    &::before {
+        display: none;
+    }
+}
+.slick-dots .slick-active button {
+    width: 100%;
+}
+// секция с матчами
+.pan-section-matches {
+    background-image: url(/image/pandemic/section_bg/bg10.jpg);
+    margin-bottom: 200px;
+    &::before {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+
+        border: 400px solid transparent;
+        border-right: 400px solid rgba($pan-green, 0.6);
+    }
+    &__inner {
+        justify-content: center;
+    }
+
+    &__wrap-content {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 1220px;
+
+        margin-bottom: 400px;
+    }
+
+    &__title-wrap {
+        position: relative;
+        align-self: flex-start;
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 100px;
+        padding-left: 40px;
+
+        font-family: "Archivo";
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 100%;
+
+            background: $pan-green;
+        }
+    }
+
+    &__title {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    &__under-title {
+        font-size: 1em;
+        color: $white;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 90%;
+        height: 120px;
+
+        margin-bottom: 100px;
+
+        border: 1px solid $dark-blue + 10%;
+        background: rgba(#131418, 0.6);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:hover .pan-section-matches__item-image-wrap:nth-child(1) {
+            left: -80px;
+        }
+
+        &:hover .pan-section-matches__item-image-wrap:nth-child(3) {
+            right: -80px;
+        }
+    }
+
+    &__item-image-wrap {
+        position: relative;
+        left: -50px;
+
+        width: 200px;
+
+        transition: 0.3s all ease;
+
+        &:nth-child(3) {
+            left: auto;
+            right: -50px;
+        }
+    }
+
+    &__item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__item-text-wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-name-main {
+        line-height: 30px;
+        text-transform: uppercase;
+        font-family: "Ow-b";
+        font-size: 2.4em;
+        color: #fff;
+    }
+
+    &__item-name-second {
+        align-self: flex-end;
+        font-size: 1.2em;
+        color: $pan-green;
+    }
+
+    &__pan-second-right {
+        align-self: flex-start;
+    }
+
+    &__item-num-wrap {
+        line-height: 30px;
+        margin: 0 20px;
+        color: $pan-green;
+    }
+
+    &__item-num {
+        font-family: "Ow-b";
+        font-size: 4em;
+    }
+
+    &__item-dote {
+        font-size: 5em;
+    }
+}
+// секция с командами
+.pan-section-team {
+    background-image: url(/image/pandemic/section_bg/dragon2.jpg);
+
+    margin-bottom: 200px;
+    &::before {
+        z-index: 1;
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: "";
+
+        border: 400px solid transparent;
+        border-left: 400px solid rgba($pan-green, 0.6);
+    }
+    &__inner {
+        justify-content: center;
+    }
+
+    &__wrap-content {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        max-width: 1220px;
+    }
+
+    &__title-wrap {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-self: flex-end;
+
+        margin-bottom: 80px;
+        padding-right: 40px;
+
+        font-family: "Archivo";
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: "";
+            display: block;
+            width: 6px;
+            height: 100%;
+
+            background: $pan-green;
+        }
+    }
+
+    &__title {
+        font-size: 3em;
+        color: #fff;
+    }
+
+    &__under-title {
+        align-self: flex-end;
+        font-size: 1em;
+        color: $white;
+    }
+}
+.pan-section-team {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        margin-bottom: 60px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+
+        width: 380px;
+        height: 380px;
+
+        margin-bottom: 30px;
+
+        border: 0.1em solid #000;
+        transition: 0.3s border-color ease;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+
+            background: rgba(#000, 0.6);
+
+            transition: 0.3s background ease;
+        }
+
+        &:hover {
+            border-color: $pan-green;
+        }
+
+        &:hover::after {
+            background: rgba(#000, 0.1);
+        }
+
+        &:hover .pan-section-team__image {
+            transform: scale(1.1);
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: 0.3s transform ease;
+    }
+
+    &__text-wrap {
+        z-index: 1;
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-family: "Ow-b";
+        font-size: 2em;
+        color: #fff;
+    }
+
+    &__role {
+        text-transform: uppercase;
+        font-size: 1em;
+        color: $pan-green;
+    }
+}
+.pan-section-team {
+    &__image-wrap {
+        width: 180px;
+        height: 100px;
+        outline: none;
+    }
+
+    &__slider-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+}
+// секция с формой
+.par-section-talk {
+    background-image: url(/image/pandemic/section_bg/dragon2.jpg);
+
+    &::before {
+        z-index: 1;
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+
+        border: 400px solid transparent;
+        border-right: 400px solid rgba($pan-green, 0.6);
+    }
+
+    &__inner {
+        justify-content: center;
+    }
+
+    &__wrap-content {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1220px;
+    }
+
+    &__title {
+        position: relative;
+        margin-bottom: 110px;
+        font-family: "Archivo";
+        font-size: 3.4em;
+        color: #fff;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: $pan-green;
+        }
+
+        &::before {
+            top: 0;
+        }
+
+        &::after {
+            bottom: 0;
+        }
+    }
+
+    &__wrap-form {
+        display: flex;
+        flex-direction: column;
+
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    &__textarea {
+        width: 100%;
+        height: 300px;
+
+        margin-bottom: 40px;
+        padding: 30px;
+        resize: none;
+
+        border: 2px solid $dark-blue + 20%;
+        background: rgba(#131418, 0.6);
+        outline: none;
+
+        border-radius: 40px 40px 0px 0px;
+
+        color: $pan-green;
+
+        &::placeholder {
+            color: $white;
+        }
+
+        &:focus {
+            border-color: $pan-green;
+        }
+    }
+
+    &__wrap-input {
+        display: flex;
+    }
+
+    &__input {
+        width: 100%;
+        height: 60px;
+
+        margin-right: 40px;
+        padding-left: 30px;
+
+        border: 2px solid $dark-blue + 20%;
+        background: rgba(#131418, 0.8);
+
+        outline: none;
+        color: $pan-green;
+
+        &:first-child {
+            border-radius: 0px 0px 0px 40px;
+        }
+
+        &:last-child {
+            border-radius: 0px 0px 40px 0px;
+        }
+
+        &::placeholder {
+            color: $white;
+        }
+
+        &:focus {
+            border-color: $pan-green;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__button {
+        align-self: flex-start;
+        padding: 20px 80px;
+
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: #fff;
+
+        border: 2px solid $pan-green;
+        outline: none;
+
+        background: transparent;
+        border-radius: 0px 40px 0px 40px;
+
+        cursor: pointer;
+
+        transition: 0.3s all ease;
+
+        &:hover {
+            color: #000;
+            background: $pan-green;
+        }
+    }
+
+    &__icon-wrap {
+        width: 100%;
+        height: 300px;
+    }
+
+    &__icon {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+// секция с продаж
+.pan-footer {
+    background-image: url(/image/pandemic/section_bg/fight.jpeg);
+    &__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__slider {
+        z-index: 10;
+        width: 100%;
+        height: 580px;
+    }
+
+    &__link {
+        width: 320px;
+        height: 580px;
+
+        outline: none;
+
+        overflow: hidden;
+
+        border: 2px solid $dark-blue + 20%;
+        border-left: none;
+    }
+
+    &__link-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+
+        background: #0f1014;
+
+        &:hover .pan-footer__image-wrap {
+            height: 400px;
+        }
+
+        &:hover .pan-footer__button {
+            transform: translateY(-40px);
+            opacity: 1;
+        }
+
+        &:hover .pan-footer__image-wrap::after {
+            background: rgba(#0f1014, 0.7);
+        }
+    }
+
+    &__image-wrap {
+        position: relative;
+        width: 100%;
+        height: 460px;
+
+        margin-bottom: 20px;
+
+        transition: 0.3s all ease;
+
+        border-bottom: 2px solid $dark-blue + 20%;
+
+        &::after {
+            z-index: 10;
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(#0f1014, 0.5);
+            transition: 0.3s all ease;
+        }
+    }
+
+    &__image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__link-text-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+        font-size: 1.4em;
+        color: $pan-green;
+    }
+
+    &__num {
+        color: $white;
+        font-size: 1.4em;
+    }
+
+    &__button {
+        margin-top: auto;
+        outline: none;
+        background: transparent;
+
+        width: 80%;
+        cursor: pointer;
+
+        opacity: 0;
+
+        text-transform: uppercase;
+
+        transform: translateY(80px);
+        transition: 0.4s all ease;
+    }
+}
+.pan-footer {
+    &__list {
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1220px;
+
+        height: 260px;
+    }
+
+    &__item-image-wrap {
+        height: 200px;
+    }
+
+    &__item-image {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__list-copy {
+        font-size: 2em;
+        color: $pan-green;
+    }
+
+    &__list-social-wrap {
+        display: flex;
+    }
+
+    &__list-icon {
+        margin: 0 10px;
+
+        &::before {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 40px;
+            height: 40px;
+            font-size: 1em;
+            color: #000;
+            background: $pan-green;
+            border-radius: 0px 10px 0px 10px;
+
+            transition: 0.3s all ease;
+        }
+
+        &:hover::before {
+            background: $pan-green - 60%;
+        }
+    }
+}

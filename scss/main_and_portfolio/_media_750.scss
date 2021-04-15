@@ -1,0 +1,29 @@
+@media screen and (max-width: 750px) {
+    .skills__inner {
+        padding: 0 50px;
+        padding-top: 100px;
+    }
+
+    .portfolio__link {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .intro__title {
+        font-size: 1.6em;
+    }
+    .skills__inner {
+        padding: 50px 30px;
+    }
+    .title-wrap__heading {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .intro__title {
+        font-size: 1.2em;
+    }
+}
