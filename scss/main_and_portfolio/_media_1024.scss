@@ -1,4 +1,7 @@
 @media screen and (max-width: 1024px) {
+    .header {
+        background: rgba(#fff, 0.8);
+    }
     .skills__inner {
         padding: 100px 100px;
     }
@@ -37,6 +40,8 @@
 
     .portfolio-header {
         position: fixed;
+        top: 0;
+        left: 0;
         background-color: #fff;
     }
 

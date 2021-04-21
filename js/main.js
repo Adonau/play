@@ -24,7 +24,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         adaptiveHeight: !0
     }), $(".button-gam").click(function () {
-        $(".header").toggleClass("header-media"), $(".button-gam").toggleClass("button-gam__transform")
+        $(".header").toggleClass("header-media"), $(".button-gam").toggleClass("button-gam__transform");
+        $(".wrapper").toggleClass("wrapper-transform")
     }), $(".p-button-gam").click(function () {
         $(".portfolio-logo").toggleClass("portfolio-logo-media"), $(".p-button-gam").toggleClass("p-button-gam__transform"), $(".portfolio-nav__list").toggleClass("portfolio-nav__list-media")
     })
@@ -43,15 +44,4 @@ $(document).ready(function () {
         backDelay: 3e3
     });
 
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
-
-        var target = $(this.hash);
-        $('html, body').stop().animate({
-            'scrollTop': target.offset().top
-        }, 500);
-    });
-
-    new WOW().init();
 });
-

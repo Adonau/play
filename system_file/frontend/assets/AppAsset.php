@@ -19,6 +19,7 @@ class AppAsset extends AssetBundle
         '//code.jquery.com/jquery-migrate-1.2.1.min.js',
         'js/slick.min.js',
         'js/main.js',
+
     ];
 
     public $depends = [

@@ -1,42 +1,64 @@
-<div class="about-me">
-    <h1 class="about-me__title">Обо мне</h1>
+<div class="wrapper">
 
-    <p class="about-me__text">Здравствуйте, меня зовут Шарапов Глеб мне 31 год, имею опыт в вёрстке и программировании более трёх лет, как в реальных проектах, так и размещённых локально для повышения квалификации.</p>
-    <p class="about-me__text">Также имеется опыт SEO-оптимизации в личном проекте, сбор ключей, подготовка текста. Опыт вывода сч-запросов в топ-3. Работа с функционалом Яндекс-метрики и Гугл-аналитики.</p>
+    <section class="skills section-main">
 
-    <div class="about-me__inner">
-        <h2 class="about-me__title">Вкратце о навыках</h2>
+        <div class="skills__inner">
 
-        <ul class="about-me__list">
-            <li class="about-me__item ">HTML</li>
-            <li class="about-me__item">CSS</li>
-            <li class="about-me__item">SCSS</li>
-            <li class="about-me__item">БЭМ</li>
-        </ul>
+            <h2 class="skills__title title">Навыки</h2>
 
-        <ul class="about-me__list about-me__margin">
-            <li class="about-me__item">Figma</li>
-            <li class="about-me__item">Photoshop</li>
-            <li class="about-me__item">Avocod</li>
-            <li class="about-me__item">Git</li>
-        </ul>
 
-        <ul class="about-me__list">
-            <li class="about-me__item">JS</li>
-            <li class="about-me__item">JQuery</li>
-            <li class="about-me__item">Gulp</li>
-        </ul>
 
-        <ul class="about-me__list">
-            <li class="about-me__item">PHP</li>
-            <li class="about-me__item">YII2</li>
-            <li class="about-me__item">MySQL</li>
-        </ul>
+            <p class="skills__text">Здравствуйте, меня зовут Глеб, имею опыт в вёрстке и программировании более двух лет, как в реальных проектах, так и размещённых локально для повышения квалификации.Также имеется опыт SEO-оптимизации в личном проекте, сбор ключей, подготовка текста. Опыт вывода сч-запросов в топ-3 и вч-запросов в топ-10. Работа с функционалом Яндекс-метрики и Гугл-аналитики.</p>
 
-        <div class="about-me__contact">
-            <a class="about-me__tell" href="tel:+998931042053">Глеб : +99893 104 20 53</a>
-            <a class="about-me__mail" href="mailto:gleb.sharapov@yahoo.com?subject=Вопросы%20по%20вёрстке%20и%20работе%20в%20целом" target="_blank">gleb.sharapov@yahoo.com</a>
+            <div class="skills__list-wrap">
+
+                <ul class="skills__list-text">
+                    <li class="skills__item-text">
+                        <span class="skills__text-name">Возраст :</span>
+                        <span class="skills__text-num">31</span>
+                    </li>
+
+                    <li class="skills__item-text">
+                        <span class="skills__text-name">Город :</span>
+                        <span class="skills__text-num">Ташкент</span>
+                    </li>
+                    <li class="skills__item-text">
+                        <span class="skills__text-name">E-mail :</span>
+                        <a class="skills__text-num" href="mailto:gleb.sharapov@yahoo.com?">gleb.sharapov@yahoo.com</a>
+                    </li>
+                    <li class="skills__item-text">
+                        <span class="skills__text-name">Телефон :</span>
+                        <a class="skills__text-num" href="tel:+998931042053">+99 893 1042053</a>
+                    </li>
+                </ul>
+
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <span class="skills__name">HTML, CSS, SCSS, BEM</span>
+                        <span class="skills__line skills__line-html"></span>
+                    </li>
+
+                    <li class="skills__item">
+                        <span class="skills__name">Figma, Photoshop, Avocod, Git</span>
+                        <span class="skills__line skills__line-figma"></span>
+                    </li>
+
+                    <li class="skills__item">
+                        <span class="skills__name"> JS, JQuery, Gulp</span>
+                        <span class="skills__line skills__line-js"></span>
+                    </li>
+
+                    <li class="skills__item">
+                        <span class="skills__name">PHP, YII2</span>
+                        <span class="skills__line skills__line-php"></span>
+                    </li>
+                </ul>
+
+            </div>
+
         </div>
-    </div>
 
+        <video class="skills__video video" src="/video/port_bg.mp4" autoplay="true" loop="loop" muted="muted" value="0" type="video/mp4"></video>
+    </section>
+    
 </div>

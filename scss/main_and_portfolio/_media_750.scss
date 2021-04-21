@@ -11,19 +11,66 @@
 }
 
 @media screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+    }
+
     .intro__title {
         font-size: 1.6em;
     }
+
     .skills__inner {
-        padding: 50px 30px;
+        padding: 0 30px;
     }
-    .title-wrap__heading {
+
+    .skills__title {
         font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    .skills__text {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+
+    .skills__list-text {
+        margin-bottom: 10px;
+    }
+
+    .skills__item-text {
+        font-size: 0.9em;
+        margin-bottom: 20px;
+    }
+
+    .skills__list {
+        flex-direction: row;
+    }
+
+    .skills__item {
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        margin-right: 10px;
+    }
+
+    .skills__line {
+        display: none;
     }
 }
 
 @media screen and (max-width: 400px) {
     .intro__title {
         font-size: 1.2em;
+    }
+
+    .skills__name {
+        font-size: 0.8em;
+    }
+
+    .portfolio-body__intro-title {
+        font-size: 2em;
+    }
+    .portfolio-body__intro-undertitle {
+        font-size: 0.8em;
     }
 }

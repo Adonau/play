@@ -1,7 +1,7 @@
 // общие стили
 @import "common/var";
 @import "common/normalize";
-// @import "common/preload";
+@import "common/preload";
 @import "common/fonts";
 // главная - портфолио
 @import "main_and_portfolio/header";
@@ -12,6 +12,7 @@
 @import "slider/slick-theme";
 // главная - портфолио
 @import "main_and_portfolio/main_page";
+@import "main_and_portfolio/about";
 @import "main_and_portfolio/footer";
 @import "main_and_portfolio/media_1260";
 @import "main_and_portfolio/media_1024";

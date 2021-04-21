@@ -1,58 +1,45 @@
 .main-body {
     font-family: "Ow";
+
+    background: #fff;
 }
 
-.section-main {
-    display: flex;
-    flex-shrink: 0;
-    width: 100%;
-    min-height: 100vh;
-}
-
-.title-wrap {
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    text-transform: uppercase;
+    width: 100%;
 
-    &__heading {
-        font-family: "Ow-el";
-        font-size: 2.5em;
-        margin-bottom: 8px;
-    }
+    transition: 0.3s all ease, 0.4s transform ease, 0.6s box-shadow ease, 0.5s border-radius ease;
+}
 
-    &__line {
-        position: relative;
-        display: flex;
-        flex-shrink: 0;
-        align-items: center;
+.wrapper-transform {
+    transform-origin: center;
+    transform: scale(0.8) translate(-30%);
+    filter: blur(2px) saturate(70%);
 
-        width: 5px;
-        height: 5px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px 0 #000 inset;
+}
 
-        border-radius: 50%;
-        background: #000;
+.section-main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
-        &::before,
-        &::after {
-            position: absolute;
-            content: "";
+.video {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-            width: 40px;
-            height: 0.1em;
+    width: 100%;
+    height: 100%;
 
-            background: #000;
-        }
-
-        &::before {
-            left: 14px;
-        }
-
-        &::after {
-            right: 14px;
-        }
-    }
+    object-fit: cover;
+    opacity: 1;
 }
 
 .intro {
@@ -60,17 +47,13 @@
     align-items: center;
     justify-content: center;
 
-    background-image: url(/image/main/book.jpg);
-    background-position: left center;
-    background-size: cover;
-
     &__inner {
         display: flex;
         justify-content: center;
         align-items: center;
 
         width: 100%;
-        height: 100%;
+        height: 100vh;
 
         background: rgba($dark-gray, 0.5);
     }
@@ -97,175 +80,5 @@
 
         color: $white;
         font-weight: bold;
-
-        animation: 1s line infinite linear;
-    }
-
-    @keyframes line {
-        0% {
-            opacity: 0;
-        }
-
-        100% {
-            opacity: 1;
-        }
-    }
-}
-
-.skills {
-    &__inner {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        width: 100%;
-        height: 100%;
-
-        padding: 0 140px;
-    }
-
-    &__title-wrap {
-        margin-bottom: 40px;
-    }
-
-    &__text {
-        margin-bottom: 100px;
-        font-family: "Ow-el";
-        font-size: 1.13em;
-    }
-
-    &__list-wrap {
-        display: flex;
-        justify-content: space-between;
-
-        width: 100%;
-    }
-
-    &__list-text {
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__item-text {
-        display: flex;
-        align-items: flex-end;
-
-        height: 30px;
-        margin-bottom: 20px;
-    }
-
-    &__text-name {
-        position: relative;
-        &::after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            content: "";
-
-            width: 100%;
-            height: 0.1em;
-
-            background: rgba($dark-gray, 1);
-        }
-    }
-
-    &__text-num {
-        display: flex;
-        line-height: 20px;
-        margin-left: 6px;
-
-        font-size: 0.9em;
-        font-family: "Ow-el";
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-    }
-
-    &__item {
-        position: relative;
-
-        height: 30px;
-        margin-bottom: 20px;
-
-        &::after {
-            position: absolute;
-            left: 0;
-            bottom: 0;
-
-            content: "";
-            width: 100%;
-            height: 0.1em;
-
-            background: rgba($dark-gray, 0.2);
-        }
-    }
-
-    &__name {
-        text-transform: uppercase;
-        font-size: 0.9em;
-    }
-
-    &__line {
-        position: absolute;
-        left: 0;
-        bottom: 0;
-
-        height: 0.1em;
-        background: #000;
-
-        &::after {
-            z-index: 1;
-            position: absolute;
-            right: -32px;
-            bottom: -10px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            width: 30px;
-            height: 20px;
-
-            font-family: "Ow-el";
-            font-size: 0.8em;
-
-            background-color: #fff;
-            border: 1px solid #000;
-        }
-    }
-
-    &__line-html {
-        width: 95%;
-
-        &::after {
-            content: "98%";
-        }
-    }
-
-    &__line-figma {
-        width: 55%;
-
-        &::after {
-            content: "60%";
-        }
-    }
-
-    &__line-js {
-        width: 50%;
-        &::after {
-            content: "55%";
-        }
-    }
-
-    &__line-php {
-        width: 45%;
-
-        &::after {
-            content: "50%";
-        }
     }
 }

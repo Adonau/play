@@ -1,13 +1,3 @@
-html,
-body {
-    height: 100%;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
 main {
     display: block;
 }
@@ -73,12 +63,10 @@ textarea {
 }
 button,
 input {
-
     overflow: visible;
 }
 button,
 select {
-
     text-transform: none;
 }
 button,
@@ -151,6 +139,19 @@ template {
 [hidden] {
     display: none;
 }
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
 h1,
 h2,
 h3,
