@@ -46,4 +46,11 @@ class PortfolioController extends \yii\web\Controller
         return $this->render('pandemic');
     }
 
+    public function actionPaintball()
+    {
+        $this->layout = '@app/views/layouts/paintball_layout.php';
+
+        return $this->render('paintball');
+    }
+
 }

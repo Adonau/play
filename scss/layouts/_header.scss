@@ -29,7 +29,7 @@
 
         background: #fff;
 
-        transition: 0.3s transform ease;
+        transition: 0.3s transform ease, 0.3s background ease;
     }
 }
 
@@ -37,6 +37,7 @@
     .button-gam__line {
         background: #000;
     }
+
     .button-gam__line:nth-child(1) {
         transform: translateX(10px);
     }

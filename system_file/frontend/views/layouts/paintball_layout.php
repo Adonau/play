@@ -4,11 +4,10 @@
 /* @var $content string */
 
 use yii\helpers\Html;
-use frontend\assets\FashonAsset;
+use frontend\assets\PaintballAsset;
 use frontend\widgets\PreloadWidget;
-// use frontend\widgets\PreloadWidget;
 
-FashonAsset::register($this);
+PaintballAsset::register($this);
 ?>
 <?php $this->beginPage() ?>
 <!DOCTYPE html>
@@ -24,7 +23,7 @@ FashonAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
 </head>
 
-<body class="fashon-body">
+<body class="paintball-body">
     <?php $this->beginBody() ?>
     <?= $content ?>
     <?= PreloadWidget::widget() ?>
