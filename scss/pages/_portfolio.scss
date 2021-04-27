@@ -1,7 +1,7 @@
 .portfolio-body {
     font-family: "Ow";
 
-    background-color:#ecf0f1;
+    background-color: #ecf0f1;
 
     &__intro {
         display: flex;
@@ -66,6 +66,12 @@
         width: 31.7%;
         height: 500px;
         margin: 10px;
+
+        overflow: hidden;
+
+        &:hover .portfolio__text-wrap {
+            transform: translateX(0);
+        }
     }
 
     &__image {
@@ -73,7 +79,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         width: 100%;
         height: 100%;
 
@@ -123,30 +129,45 @@
         bottom: 40px;
 
         display: flex;
-        flex-direction: column;
+        align-items: center;
 
         width: 90%;
 
-        padding: 10px 0;
+        padding: 20px 0;
         padding-left: 40px;
 
-        transition: 0.8s all ease;
+        transform: translateX(-110%);
+        transition: 0.5s all ease;
 
-        background-color: #ecf0f1;
+        background-color: #000;
     }
 
     &__desc {
-        z-index: 2;
-        color: $gray;
+        display: flex;
+        align-items: center;
 
-        transition: 0.5s all ease;
+        font-size: 1.6em;
+        color: $gray-un;
+
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+
+        &::after {
+            display: block;
+            content: "|";
+            margin: 10px;
+        }
     }
 
     &__main-word {
-        z-index: 2;
         font-size: 1.6em;
-        color: $black;
-        transition: 0.5s all ease;
+        color: #fff;
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__link:hover .fa {

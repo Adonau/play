@@ -11,20 +11,20 @@ foreach ($port_pages as $page) {
     <div class="portfolio__list">
 
         <?php foreach ($port as $por) : ?>
-            <a class="portfolio__link" target="_blank" href="<?= $por->port_link ?>">
-                <div class="portfolio__image" style="background-image: url(../image/portfolio/link/<?= $por->port_img ?>);">
+            <div class="portfolio__link" target="_blank">
+                <a class="portfolio__image" href="<?= $por->port_link ?>" style="background-image: url(../image/portfolio/link/<?= $por->port_img ?>);">
                     <span class="portfolio__eye">
                         <i class="fa fa-eye" aria-hidden="true"></i>
                     </span>
-                </div>
+                </a>
 
                 <div class="portfolio__text-wrap">
-                    <div class="portfolio__desc"><?= $por->port_desc ?></div>
-                    <div class="portfolio__main-word"><?= $por->port_main ?></div>
+                    <a class="portfolio__desc" href="<?= $por->port_desc ?>">HTML</a>
+                    <a class="portfolio__main-word" href="<?= $por->port_main ?>">CSS</a>
                 </div>
-            </a>
+            </div>
         <?php endforeach; ?>
-        
+
     </div>
 
 </div>

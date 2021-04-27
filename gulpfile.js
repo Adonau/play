@@ -38,7 +38,7 @@ gulp.task('min', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['./scss/*.scss', './scss/base/*.scss', './scss/components/*.scss', './scss/layouts/*.scss', './scss/media/*.scss', './scss/pages/*.scss'], gulp.series('sass-compail', 'autoprefixer'))
+    gulp.watch(['./scss/*.scss', './scss/base/*.scss', './scss/components/*.scss', './scss/layouts/*.scss', './scss/media/*.scss', './scss/pages/*.scss'], gulp.series('sass-compail','autoprefixer'))
 })
 
 // gulp.watch('./scss/**/*.scss', gulp.series('sass-compail', 'autoprefixer', 'min'))
