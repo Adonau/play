@@ -1,0 +1,786 @@
+.tat-body {
+    font-family: "Ow";
+}
+
+.tat-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-container {
+    padding: 0 30px;
+}
+
+.tat-decore-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 140px;
+    background-image: url(/image/tattoo/short/decor_white_line2.png);
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+}
+
+.tat-title-site {
+    font-size: 3.74em;
+}
+
+.decor-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 180px;
+    margin-top: 20px;
+}
+
+.decor-title__line {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 10px;
+    background-color: #000;
+}
+
+.decor-title__round {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.decor-title__round::after,
+.decor-title__round::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 0.1rem;
+    background-color: #000;
+}
+
+.decor-title__round::after {
+    right: 20px;
+}
+
+.decor-title__round::before {
+    left: 20px;
+}
+
+.tat-button-site,
+.tat-button-site-white {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60px;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.tat-button-site::before,
+.tat-button-site::after,
+.tat-button-site-white::before,
+.tat-button-site-white::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0.1rem;
+    background-color: #000;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.tat-button-site::before,
+.tat-button-site-white::before {
+    bottom: 10px;
+    width: 100%;
+}
+
+.tat-button-site::after,
+.tat-button-site-white::after {
+    bottom: 4px;
+    width: 60%;
+}
+
+.tat-button-site:hover::before,
+.tat-button-site-white:hover::before {
+    bottom: 50px;
+}
+
+.tat-button-site:hover::after,
+.tat-button-site-white:hover::after {
+    width: 100%;
+}
+
+.tat-button-site-white {
+    color: #fff;
+}
+
+.tat-button-site-white::before,
+.tat-button-site-white::after {
+    background-color: #fff;
+}
+
+.tat-header {
+    z-index: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 26px;
+    padding: 0 20px;
+}
+
+.tat-header__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+}
+
+.tat-header__button {
+    z-index: 10;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.tat-header__button-line {
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.tat-header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+
+.tat-header__item {
+    margin-left: 20px;
+}
+
+.tat-header__list:first-child .tat-header__item {
+    margin-right: 20px;
+    margin-left: 0;
+}
+
+.tat-header__link {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Ow-el";
+    font-size: 1.13em;
+    color: #fff;
+}
+
+.tat-header__link::before,
+.tat-header__link::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 0.1rem;
+    background-color: #fff;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.2s all ease;
+    transition: 0.2s all ease;
+}
+
+.tat-header__link::after {
+    bottom: -2px;
+}
+
+.tat-header__link:hover::before,
+.tat-header__link:hover::after {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.tat-header__logo {
+    z-index: 5;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.tat-header__button-transform .tat-header__button-line:nth-child(1) {
+    -webkit-transform: translate(0px, 14px) rotate(45deg);
+    transform: translate(0px, 14px) rotate(45deg);
+}
+
+.tat-header__button-transform .tat-header__button-line:nth-child(2) {
+    -webkit-transform: translate(20px);
+    transform: translate(20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tat-header__button-transform .tat-header__button-line:nth-child(3) {
+    -webkit-transform: translate(0px, -14px) rotate(-45deg);
+    transform: translate(0px, -14px) rotate(-45deg);
+}
+
+.tat-section-banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.tat-section-banner__image {
+    width: 100%;
+    height: 100%;
+    background-image: url(/image/tattoo/section_bg/main_header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tat-section-banner__line {
+    z-index: 2;
+    bottom: -5px;
+}
+
+.tat-club {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tat-club__title {
+    margin-top: 150px;
+}
+
+.tat-club__decor-title {
+    margin-bottom: 60px;
+}
+
+.tat-club__text {
+    line-height: 32px;
+    max-width: 660px;
+    margin-bottom: 60px;
+    font-family: "Amiri";
+    font-size: 1.13em;
+    text-align: center;
+}
+
+.tat-club__link {
+    margin-bottom: 150px;
+}
+
+.tat-process {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 1200px;
+    min-height: 400px;
+    background: #000;
+}
+
+.tat-process__image-p {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    background-color: transparent;
+}
+
+.tat-process__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.tat-process__line {
+    top: -5px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.tat-process__line-bot {
+    bottom: -5px;
+}
+
+.tat-process__title {
+    color: #fff;
+}
+
+.tat-process__decor-title {
+    margin-bottom: 60px;
+}
+
+.tat-process__decor-line {
+    background-color: #fff;
+}
+
+.tat-process__decor-line::after,
+.tat-process__decor-line::before {
+    background-color: #fff;
+}
+
+.tat-process__video-container {
+    position: relative;
+    width: 100%;
+    max-width: 725px;
+    height: 420px;
+    overflow: hidden;
+}
+
+.tat-process__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.tat-author {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tat-author__image-wrap {
+    margin-top: 160px;
+    margin-bottom: 100px;
+    width: 100%;
+    max-width: 730px;
+}
+
+.tat-author__image {
+    width: 100%;
+    height: 100%;
+}
+
+.tat-author__decor-title {
+    margin-bottom: 20px;
+}
+
+.tat-author__text {
+    max-width: 730px;
+    margin-bottom: 60px;
+    font-family: "Amiri";
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+
+.tat-author__image-text {
+    width: 193px;
+    height: 110px;
+    margin-bottom: 30px;
+    background-image: url(/image/tattoo/short/Text.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tat-author__name {
+    margin-bottom: 150px;
+    font-family: "Amiri";
+    font-size: 1.13em;
+}
+
+.tat-works {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+}
+
+.tat-works__line {
+    top: -5px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.tat-works__line-bot {
+    bottom: -5px;
+}
+
+.tat-works__title {
+    margin-top: 300px;
+    color: #fff;
+}
+
+.tat-works__decor-line {
+    background-color: #fff;
+}
+
+.tat-works__decor-line::after,
+.tat-works__decor-line::before {
+    background-color: #fff;
+}
+
+.tat-works__image-container {
+    display: grid;
+    grid-template-areas: "a a b b b"
+        "a a b b b"
+        "a a c c c"
+        "a a c c c"
+        "d d c c c"
+        "d d c c c"
+        "f f f l l"
+        "f f f l l";
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(5, 20%);
+    width: 100%;
+    max-width: 1100px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.tat-works__image-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px;
+}
+
+.tat-works__image-box:nth-child(1) {
+    grid-area: a;
+}
+
+.tat-works__image-box:nth-child(2) {
+    grid-area: d;
+}
+
+.tat-works__image-box:nth-child(3) {
+    grid-area: b;
+}
+
+.tat-works__image-box:nth-child(4) {
+    grid-area: c;
+}
+
+.tat-works__image-box:nth-child(5) {
+    grid-area: f;
+}
+
+.tat-works__image-box:nth-child(6) {
+    grid-area: l;
+}
+
+.tat-works__image {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.tat-works__link {
+    margin-bottom: 150px;
+}
+
+.tat-reviews {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.tat-reviews__title {
+    margin-top: 150px;
+}
+
+.tat-reviews__decor-title {
+    margin-bottom: 60px;
+}
+
+.tat-reviews__text {
+    max-width: 730px;
+    margin-bottom: 60px;
+    font-family: "Amiri";
+    font-size: 3em;
+    font-style: italic;
+    text-align: center;
+}
+
+.tat-reviews__image-text {
+    width: 193px;
+    height: 110px;
+    margin-bottom: 30px;
+    background-image: url(/image/tattoo/short/Text.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tat-reviews__name {
+    margin-bottom: 150px;
+    font-family: "Amiri";
+    font-size: 1.13em;
+}
+
+.tat-sponsor {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    background-color: #000;
+}
+
+.tat-sponsor__line {
+    top: -5px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.tat-sponsor__line-bot {
+    bottom: -5px;
+}
+
+.tat-sponsor__title {
+    margin-top: 150px;
+    color: #fff;
+}
+
+.tat-sponsor__decor-title {
+    margin-bottom: 60px;
+}
+
+.tat-sponsor__decor-line {
+    background-color: #fff;
+}
+
+.tat-sponsor__decor-line::after,
+.tat-sponsor__decor-line::before {
+    background-color: #fff;
+}
+
+.tat-sponsor__icon-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 180px;
+}
+
+.tat-sponsor__icon-link {
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+
+.tat-sponsor__icon-link:hover {
+    background-color: #121212;
+}
+
+.tat-sponsor__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.tat-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.tat-footer__decor-title {
+    margin-bottom: 60px;
+}
+
+.tat-footer__title {
+    margin-top: 150px;
+}
+
+.tat-footer__tel {
+    color: #000;
+    font-size: 3em;
+    font-family: "Amiri";
+    margin-bottom: 30px;
+}
+
+.tat-footer__date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: "Amiri";
+    font-size: 1.13em;
+    text-align: center;
+}
+
+.tat-footer__title-small {
+    font-size: 1.5em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.tat-footer__date-m {
+    margin-top: 50px;
+}
+
+.tat-footer__text-b {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.tat-footer__text {
+    font-family: "Amiri";
+    font-size: 1.13em;
+    text-align: center;
+}
+
+.tat-footer__text:last-child {
+    margin-bottom: 110px;
+}

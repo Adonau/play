@@ -138,42 +138,42 @@
         </section>
 
         <section class="pai-arena">
-            <div class="pai-arena__image-container">
+            <div class=" pai-arena__image-container">
 
-                <a class="pai-arena__image-wrap" href="">
-                    <div class="pai-arena__image-inner">
-                        <h2 class="pai-arena__image-title">Play</h2>
-                        <img class="pai-arena__image" src="/image/paintball/arena/ser1-370x247.jpg" alt="">
-                        <div class="pai-arena__title-wrap">
-                            <span class="pai-arena__image-heading">Play</span>
-                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
-                        </div>
+            <a class="pai-arena__image-wrap" href="">
+                <div class="pai-arena__image-inner">
+                    <h2 class="pai-arena__image-title">Play</h2>
+                    <img class="pai-arena__image" src="/image/paintball/arena/ser1-370x247.jpg" alt="">
+                    <div class="pai-arena__title-wrap">
+                        <span class="pai-arena__image-heading">Play</span>
+                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <a class="pai-arena__image-wrap" href="">
-                    <div class="pai-arena__image-inner">
-                        <h2 class="pai-arena__image-title">Store</h2>
-                        <img class="pai-arena__image" src="/image/paintball/arena/ser2-370x247.jpg" alt="">
-                        <div class="pai-arena__title-wrap">
-                            <span class="pai-arena__image-heading">Store</span>
-                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
-                        </div>
+            <a class="pai-arena__image-wrap" href="">
+                <div class="pai-arena__image-inner">
+                    <h2 class="pai-arena__image-title">Store</h2>
+                    <img class="pai-arena__image" src="/image/paintball/arena/ser2-370x247.jpg" alt="">
+                    <div class="pai-arena__title-wrap">
+                        <span class="pai-arena__image-heading">Store</span>
+                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
                     </div>
-                </a>
-                <a class="pai-arena__image-wrap" href="">
-                    <div class="pai-arena__image-inner">
-                        <h2 class="pai-arena__image-title">Arena</h2>
-                        <img class="pai-arena__image" src="/image/paintball/arena/ser3-370x201.jpg" alt="">
+                </div>
+            </a>
+            <a class="pai-arena__image-wrap" href="">
+                <div class="pai-arena__image-inner">
+                    <h2 class="pai-arena__image-title">Arena</h2>
+                    <img class="pai-arena__image" src="/image/paintball/arena/ser3-370x201.jpg" alt="">
 
-                        <div class="pai-arena__title-wrap">
-                            <span class="pai-arena__image-heading">Arena</span>
-                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
-                        </div>
+                    <div class="pai-arena__title-wrap">
+                        <span class="pai-arena__image-heading">Arena</span>
+                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
                     </div>
-                </a>
-            </div>
-        </section>
-    </main>
+                </div>
+            </a>
+</div>
+</section>
+</main>
 
 </div>

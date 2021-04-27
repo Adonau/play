@@ -18,6 +18,7 @@ class PaintballAsset extends AssetBundle
         'https://use.fontawesome.com/67b3feebd1.js',
         '//code.jquery.com/jquery-migrate-1.2.1.min.js',
         'js/slick.min.js',
+        'js/parallax.min.js',
         'js/paintball.js',
 
     ];
