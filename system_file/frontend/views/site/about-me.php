@@ -57,8 +57,6 @@
             </div>
 
         </div>
-
-        <video class="skills__video video" src="/video/port_bg.mp4" autoplay="true" loop="loop" muted="muted" value="0" type="video/mp4"></video>
     </section>
     
 </div>

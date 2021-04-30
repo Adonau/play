@@ -19,8 +19,8 @@ foreach ($port_pages as $page) {
                 </a>
 
                 <div class="portfolio__text-wrap">
-                    <a class="portfolio__desc" href="<?= $por->port_desc ?>">HTML</a>
-                    <a class="portfolio__main-word" href="<?= $por->port_main ?>">CSS</a>
+                    <a class="portfolio__desc" href="<?= $por->port_desc ?>" target="_blank">Разметка</a>
+                    <a class="portfolio__main-word" href="<?= $por->port_main ?>" target="_blank">Стили</a>
                 </div>
             </div>
         <?php endforeach; ?>

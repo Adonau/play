@@ -1,3 +1,14 @@
+<!-- <div class="pai-title-wrap">
+    <span class="pai-title-wrap__word">WELCOME</span>
+    <h2 class="pai-title">THE BEST PAINTBALL ARENA ON THE PLANET!</h2>
+</div>
+
+<a class="pai-button" href="">
+    <span class="pai-button__word">About</span>
+</a> -->
+
+
+
 <div class="pai-wrapper">
 
     <header class="pai-header">
@@ -140,40 +151,53 @@
         <section class="pai-arena">
             <div class=" pai-arena__image-container">
 
-            <a class="pai-arena__image-wrap" href="">
-                <div class="pai-arena__image-inner">
-                    <h2 class="pai-arena__image-title">Play</h2>
-                    <img class="pai-arena__image" src="/image/paintball/arena/ser1-370x247.jpg" alt="">
-                    <div class="pai-arena__title-wrap">
-                        <span class="pai-arena__image-heading">Play</span>
-                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
+                <a class="pai-arena__image-wrap" href="">
+                    <div class="pai-arena__image-inner">
+                        <h2 class="pai-arena__image-title">Play</h2>
+                        <img class="pai-arena__image" src="/image/paintball/arena/ser1-370x247.jpg" alt="">
+                        <div class="pai-arena__title-wrap">
+                            <span class="pai-arena__image-heading">Play</span>
+                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
+                        </div>
                     </div>
-                </div>
+                </a>
+
+                <a class="pai-arena__image-wrap" href="">
+                    <div class="pai-arena__image-inner">
+                        <h2 class="pai-arena__image-title">Store</h2>
+                        <img class="pai-arena__image" src="/image/paintball/arena/ser2-370x247.jpg" alt="">
+                        <div class="pai-arena__title-wrap">
+                            <span class="pai-arena__image-heading">Store</span>
+                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="pai-arena__image-wrap" href="">
+                    <div class="pai-arena__image-inner">
+                        <h2 class="pai-arena__image-title">Arena</h2>
+                        <img class="pai-arena__image" src="/image/paintball/arena/ser3-370x201.jpg" alt="">
+
+                        <div class="pai-arena__title-wrap">
+                            <span class="pai-arena__image-heading">Arena</span>
+                            <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="pai-arena__main-title-wrap pai-title-wrap">
+                <span class="pai-title-wrap__word">WELCOME</span>
+                <h2 class="pai-title">THE BEST PAINTBALL ARENA ON THE PLANET!</h2>
+            </div>
+
+            <p class="pai-arena__text">Our biggest field was built, in the first place, to offer the most realistic combat simulation facility within the paintball industry. Let’s imagine the game where you’re combining the talent of a movie maker and the vision of a sophisticated paintball player. It takes you only one step to get to the war zone and try out the best combat action you have ever experienced.</p>
+
+            <a class="pai-arena__button pai-button" href="">
+                <span class="pai-button__word">About</span>
             </a>
 
-            <a class="pai-arena__image-wrap" href="">
-                <div class="pai-arena__image-inner">
-                    <h2 class="pai-arena__image-title">Store</h2>
-                    <img class="pai-arena__image" src="/image/paintball/arena/ser2-370x247.jpg" alt="">
-                    <div class="pai-arena__title-wrap">
-                        <span class="pai-arena__image-heading">Store</span>
-                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
-                    </div>
-                </div>
-            </a>
-            <a class="pai-arena__image-wrap" href="">
-                <div class="pai-arena__image-inner">
-                    <h2 class="pai-arena__image-title">Arena</h2>
-                    <img class="pai-arena__image" src="/image/paintball/arena/ser3-370x201.jpg" alt="">
-
-                    <div class="pai-arena__title-wrap">
-                        <span class="pai-arena__image-heading">Arena</span>
-                        <p class="pai-arena__image-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum cupiditate.</p>
-                    </div>
-                </div>
-            </a>
-</div>
-</section>
-</main>
+        </section>
+    </main>
 
 </div>
