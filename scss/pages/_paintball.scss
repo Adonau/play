@@ -41,11 +41,12 @@
         height: 50px;
 
         font-family: "RobotoC";
+        text-transform: uppercase;
         font-weight: bold;
         color: $brown-lt;
 
         background-image: url("/image/paintball/icon/subtitle_dark.png");
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 }
@@ -87,7 +88,7 @@
     }
 
     &:hover:after {
-        width: 100%; 
+        width: 100%;
     }
 }
 
@@ -144,12 +145,12 @@
 
         transition: 0.3s color ease-in-out;
         &:hover {
-            color: $blue;
+            color: $pai-blue;
         }
     }
 
     &__link-event {
-        color: $blue;
+        color: $pai-blue;
 
         &::before {
             content: "[";
@@ -177,7 +178,7 @@
     width: max-content;
     min-width: 200px;
     padding: 20px;
-    background: $blue;
+    background: $pai-blue;
 
     opacity: 0;
     visibility: hidden;
@@ -444,7 +445,7 @@
             font-size: 2.3em;
             margin-right: 10px;
 
-            color: $blue;
+            color: $pai-blue;
         }
 
         &::after {
@@ -452,7 +453,7 @@
             font-size: 2.3em;
             margin-left: 10px;
 
-            color: $blue;
+            color: $pai-blue;
         }
     }
 
@@ -481,7 +482,7 @@
             font-size: 2.3em;
             margin-right: 10px;
 
-            color: $blue;
+            color: $pai-blue;
         }
 
         &::after {
@@ -489,7 +490,7 @@
             font-size: 2.3em;
             margin-left: 10px;
 
-            color: $blue;
+            color: $pai-blue;
         }
     }
 
@@ -515,5 +516,880 @@
 
     &__button {
         margin-top: 30px;
+    }
+}
+
+// what is paintball section
+
+.pai-what {
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    max-width: 1920px;
+
+    background-image: url("/image/paintball/section__bg/bg_1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    overflow: hidden;
+    &::after,
+    &::before {
+        z-index: 10;
+        content: "";
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 60px;
+
+        background-image: url("/image/paintball/section__bg/06_airsoft_about_02.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+    &::after {
+        top: -5px;
+        transform: rotate(180deg);
+    }
+
+    &::before {
+        bottom: -5px;
+    }
+
+    &__slider {
+        width: 50%;
+        height: 600px;
+    }
+
+    &__slider-image-wrap {
+        width: 100%;
+        height: 600px;
+    }
+
+    &__slider-image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    & .slick-arrow {
+        z-index: 10;
+        width: 40px;
+        height: 100px;
+        background: rgba(#000, 0.5);
+
+        top: auto;
+        bottom: 50%;
+        transform: translateY(50%);
+
+        transition: 0.3s all ease;
+        &:hover {
+            background: rgba(#000, 1);
+        }
+    }
+
+    & .slick-prev {
+        left: 20px;
+
+        &::before {
+            content: "\f104";
+            font-family: fontawesome;
+        }
+    }
+
+    & .slick-next {
+        right: 20px;
+
+        &::before {
+            content: "\f105";
+            font-family: fontawesome;
+        }
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+
+        width: 50%;
+
+        padding: 100px 140px;
+    }
+
+    &__intro-title-wrap {
+        align-items: flex-start;
+        margin-bottom: 40px;
+
+        & .pai-title-wrap__word {
+            justify-content: flex-start;
+            width: 100%;
+
+            margin-bottom: 6px;
+            padding-left: 40px;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+        & .pai-title {
+            line-height: 40px;
+            text-align: left;
+        }
+    }
+
+    &__intro-text {
+        font-size: 0.9em;
+        color: $pai-gray;
+
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+
+    &__intro-item {
+        font-family: "RobotoB";
+        color: $pai-gray;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+
+        &::before {
+            content: "\f00c";
+
+            margin-right: 20px;
+
+            font-family: fontawesome;
+            color: $pai-blue;
+        }
+    }
+
+    &__intro-link {
+        color: $pai-blue;
+
+        transition: 0.3s ease;
+        &:hover {
+            color: $pai-gray;
+        }
+    }
+}
+
+// pricing section
+
+.pai-pricing {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 1200px;
+
+    padding: 100px 0;
+
+    &__title-wrap {
+        align-items: flex-start;
+        margin-bottom: 40px;
+
+        & .pai-title-wrap__word {
+            justify-content: flex-start;
+            width: 100%;
+
+            margin-bottom: 6px;
+            padding-left: 40px;
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+
+        & .pai-title {
+            line-height: 40px;
+            text-align: left;
+        }
+    }
+
+    &__button-wrap {
+        display: flex;
+
+        margin-bottom: 40px;
+    }
+
+    &__button {
+        min-width: 140px;
+        padding: 10px 30px;
+        margin-right: 20px;
+
+        text-align: center;
+        font-size: 0.9em;
+
+        background: #f3ede8;
+
+        & .pai-button__word {
+            color: $pai-gray;
+            transition: 0.3s all ease;
+        }
+
+        &::after {
+            background: $pai-blue;
+        }
+
+        &:hover .pai-button__word {
+            color: #fff;
+        }
+    }
+
+    &__card-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        width: 370px;
+        height: 465px;
+
+        background: #f3ede8;
+    }
+
+    &__card-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__card-item {
+        display: flex;
+
+        & .fa {
+            margin-top: 3px;
+            margin-right: 6px;
+            color: $pai-blue;
+        }
+
+        &:nth-child(1) {
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+
+            margin-bottom: 40px;
+
+            background-image: url("/image/paintball/pricing/price.png");
+            background-size: 100% 100%;
+            background-position: center top;
+            background-repeat: no-repeat;
+
+            font-family: "RobotoB";
+            font-size: 1.6em;
+            color: #fff;
+        }
+
+        &:nth-child(2) {
+            display: flex;
+            align-items: flex-end;
+
+            height: 50px;
+
+            margin-bottom: 50px;
+
+            font-family: "RobotoB";
+            color: $pai-gray;
+        }
+
+        &:nth-child(3) {
+            justify-content: flex-start;
+
+            width: 100%;
+            max-width: 260px;
+            line-height: 16px;
+            margin-bottom: 10px;
+
+            font-size: 0.9em;
+            color: $pai-gray;
+        }
+
+        &:nth-child(4) {
+            justify-content: flex-start;
+
+            width: 100%;
+            max-width: 260px;
+
+            font-size: 0.9em;
+            color: $pai-gray;
+        }
+
+        &:last-child {
+            margin-top: auto;
+            width: 100%;
+        }
+    }
+
+    &__card-item-usd {
+        align-self: flex-start;
+        margin-right: 6px;
+    }
+
+    &__card-item-bold {
+        line-height: 50px;
+        font-size: 4em;
+        color: $brown-dk;
+    }
+
+    &__card-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 60px;
+
+        font-family: "RobotoB";
+        text-transform: uppercase;
+        color: $pai-gray;
+
+        background: #ebe4de;
+
+        transition: 0.3s all ease;
+        &::before {
+            margin-right: 10px;
+            content: "\f105";
+            font-family: fontawesome;
+        }
+        &:hover {
+            color: #fff;
+            background: $pai-blue;
+        }
+    }
+}
+
+// indoor section
+
+.pai-indoor {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("/image/paintball/indoor/01_home_Paintball_3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+    &::after,
+    &::before {
+        z-index: 10;
+        content: "";
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 60px;
+
+        background-image: url("/image/paintball/section__bg/06_airsoft_about_02.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+    &::after {
+        top: -25px;
+        transform: rotate(180deg);
+    }
+
+    &::before {
+        bottom: -25px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1400px;
+        height: 100%;
+
+        color: #fff;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+        max-width: 400px;
+        height: 300px;
+    }
+
+    &__title {
+        font-family: "RobotoB";
+        font-size: 3em;
+
+        &::before {
+            content: "[";
+            margin-right: 10px;
+        }
+
+        &::after {
+            content: "]";
+            margin-left: 10px;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 0.9em;
+    }
+
+    &__icon-container {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    &__icon-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__icon {
+        margin-bottom: 10px;
+        &::before {
+            font-size: 3em;
+        }
+    }
+}
+
+// product section
+
+.pai-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 0;
+
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__card-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 270px;
+        height: 460px;
+
+        border: 1px solid #f3ede8;
+
+        box-shadow: 0 0 20px 0 rgba($pai-gray, 0.5);
+        border-radius: 10px;
+
+        background: #fff;
+        overflow: hidden;
+    }
+
+    &__card-wrap-img {
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+        height: 60%;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            bottom: 0;
+
+            width: 80%;
+            height: 1px;
+
+            background: rgba($pai-gray, 0.5);
+        }
+    }
+
+    &__card-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+
+    &__card-text {
+        width: 100%;
+        padding: 20px 30px;
+
+        font-family: "MondaB";
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        color: $brown-dk;
+    }
+
+    &__card-price {
+        font-size: 1.4em;
+        font-family: "RobotoB";
+        color: $pai-blue;
+    }
+
+    &__card-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+        height: 40px;
+
+        padding: 0;
+        margin-top: auto;
+
+        background: #ebe4de;
+
+        &::after {
+            background: $pai-blue;
+        }
+
+        & .pai-button__word {
+            transition: 0.3s all ease;
+            color: $pai-gray;
+
+            &::before {
+                margin-right: 10px;
+                content: "\f105";
+                font-family: fontawesome;
+            }
+        }
+
+        &:hover .pai-button__word {
+            color: #fff;
+        }
+    }
+
+    &__slider {
+        width: 100%;
+        height: 500px;
+
+        & .slick-dots li {
+            width: 8px;
+            height: 8px;
+
+            margin: 0 10px;
+        }
+        & .slick-dots button {
+            width: 8px;
+            height: 8px;
+
+            padding: 0;
+            margin: 0;
+
+            border: 1px solid $pai-gray;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        & .slick-active button {
+            background: $pai-blue;
+            border: 1px solid $pai-blue;
+        }
+    }
+
+    &__slide {
+        display: flex !important;
+        width: 100%;
+        height: 500px;
+    }
+
+    &__image-wrap {
+        width: 60%;
+        height: 100%;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        width: 40%;
+        height: 100%;
+
+        padding: 0 100px;
+
+        background: $brown-dk;
+    }
+
+    &__article-title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-family: "RobotoB";
+        font-size: 1.6em;
+        color: #fff;
+    }
+
+    &__article-text {
+        margin-bottom: 30px;
+        font-family: "RobotoC";
+        color: $pai-gray;
+    }
+
+    &__article-link {
+        text-transform: uppercase;
+        font-family: "RobotoB";
+        color: $pai-blue;
+
+        transition: 0.3s all ease;
+        &::before {
+            content: "\f105";
+            margin-right: 6px;
+            font-family: fontawesome;
+        }
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+// pre footer
+.pai-tactical {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100vh;
+
+    &::after {
+        z-index: 10;
+        content: "";
+        position: absolute;
+        left: 0;
+
+        width: 100%;
+        height: 60px;
+
+        background-image: url("/image/paintball/section__bg/06_airsoft_about_02.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+    &::after {
+        top: -25px;
+        transform: rotate(180deg);
+    }
+
+    &__intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+        min-height: 500px;
+
+        background: transparent;
+
+        color: #fff;
+    }
+
+    &__title {
+        font-family: "MondaB";
+        text-transform: uppercase;
+        font-size: 2em;
+
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        text-align: center;
+        font-family: "MondaB";
+
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+.pai-footer {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: max-content;
+
+    background: $brown-dk;
+
+    &__book {
+        position: relative;
+        top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 400px;
+
+        background-image: url("/image/paintball/section__bg/redbg.webp");
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+
+    &__title {
+        font-family: "MondaB";
+        font-size: 2em;
+        color: #fff;
+
+        &::before {
+            content: "[";
+            margin-right: 10px;
+
+            color: $brown-dk;
+        }
+
+        &::after {
+            content: "]";
+            margin-left: 10px;
+
+            color: $brown-dk;
+        }
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-family: "MondaB";
+        font-size: 0.9em;
+        color: #fff;
+    }
+}
+
+.pai-footer {
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+
+        padding: 100px 0;
+    }
+
+    &__contact-wrap {
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 100px;
+    }
+
+    &__contact,
+    &__location {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+
+    &__location {
+        align-items: flex-end;
+    }
+
+    &__contact-title,
+    &__location-title {
+        margin-bottom: 20px;
+        font-family: "MondaB";
+        font-size: 1.2em;
+        color: #fff;
+    }
+
+    &__contact-text,
+    &__location-text {
+        font-family: "MondaB";
+        font-size: 0.9em;
+        color: $pai-gray;
+    }
+
+    &__logo {
+        margin: 0 50px;
+    }
+
+    &__logo-img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        margin-bottom: 50px;
+
+        border-top: 1px solid rgba($pai-gray, 0.3);
+        border-bottom: 1px solid rgba($pai-gray, 0.3);
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 700px;
+        padding: 20px 0;
+    }
+
+    &__link {
+        font-family: "MondaB";
+        text-transform: uppercase;
+        font-size: 0.9em;
+        color: $pai-gray;
+
+        transition: 0.3s color ease-in-out;
+        &:hover {
+            color: $pai-blue;
+        }
+    }
+
+    &__corp {
+        align-self: center;
+        color: $pai-gray;
     }
 }

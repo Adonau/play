@@ -15,4 +15,31 @@ $(document).ready(function () {
     });
 
 
+    $('.pai-what__slider').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        speed: 500,
+        fade: false,
+        cssEase: 'linear'
+    });
+
+    $('.pai-product__slider').slick({
+        dots: true,
+        arrows: false,
+        infinite: true,
+        pauseOnHover: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        slidesToShow: 1,
+        speed: 500,
+        fade: false,
+        cssEase: 'linear'
+    });
+
+
 });

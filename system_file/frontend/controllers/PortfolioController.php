@@ -53,4 +53,11 @@ class PortfolioController extends \yii\web\Controller
         return $this->render('paintball');
     }
 
+    public function actionLineage()
+    {
+        $this->layout = '@app/views/layouts/lineage_layout.php';
+
+        return $this->render('lineage');
+    }
+
 }

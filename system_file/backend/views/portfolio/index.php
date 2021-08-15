@@ -11,13 +11,13 @@ use yii\widgets\ActiveForm;
 $this->title = 'Portfolios';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="portfolio-index">
+<div class="page-admin">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1 class="page-admin__title"><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Portfolio', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+
+    <?= Html::a('Create Portfolio', ['create'], ['class' => 'btn btn-success']) ?>
+
 
     <?php Pjax::begin(); ?>
     <?php echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,7 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'itemOptions' => ['class' => 'item'],
         'itemView' => function ($model, $key, $index, $widget) {
-            return Html::a(Html::encode($model->id), ['view', 'id' => $model->id]);
+            $sumbol = '/';
+            return Html::a(Html::encode( stristr($model->port_link, $sumbol) ), ['view', 'id' => $model->id]);
+            
         },
     ]) ?>
 

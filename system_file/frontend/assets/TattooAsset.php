@@ -13,7 +13,7 @@ class TattooAsset extends AssetBundle
     public $baseUrl = '@web';
     public $css = [
         'css/animate.css',
-        'css/main.css',
+        'css/main.css'
     ];
     public $js = [
         'js/main.js',

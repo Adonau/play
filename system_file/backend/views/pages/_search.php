@@ -8,7 +8,7 @@ use yii\widgets\ActiveForm;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="pages-search">
+<div class="search">
 
     <?php $form = ActiveForm::begin([
         'action' => ['index'],
@@ -18,17 +18,15 @@ use yii\widgets\ActiveForm;
         ],
     ]); ?>
 
-    <?= $form->field($model, 'id') ?>
-
     <?= $form->field($model, 'page_name') ?>
     
-    <?= $form->field($model, 'title_head') ?>
+    <!-- <?= $form->field($model, 'title_head') ?>
 
     <?= $form->field($model, 'canonical') ?>
 
     <?= $form->field($model, 'h1_title') ?>
 
-    <?= $form->field($model, 'h1_undertitle') ?>
+    <?= $form->field($model, 'h1_undertitle') ?> -->
 
     <?php // echo $form->field($model, 'h1_undertext') ?>
 

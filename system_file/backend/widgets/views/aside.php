@@ -17,10 +17,7 @@ use yii\helpers\Url;
                         <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Главная страница</a>
                     </li>
                     <li class="aside__item-drop">
-                        <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Блог</a>
-                    </li>
-                    <li class="aside__item-drop">
-                        <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Контакты</a>
+                        <a class="aside__link-drop" href="<?= Url::to(['/pages']); ?>">Страницы-портфолио</a>
                     </li>
                 </ul>
                 
@@ -31,13 +28,7 @@ use yii\helpers\Url;
                 <div class="aside__point dropdownlink"><i class="fas fa-passport"></i>Макеты в Портфолио</div>
                 <ul class="aside__list-drop submenuItems">
                     <li class="aside__item-drop">
-                        <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Проект №1</a>
-                    </li>
-                    <li class="aside__item-drop">
-                        <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Проект №2</a>
-                    </li>
-                    <li class="aside__item-drop">
-                        <a class="aside__link-drop" href="<?= Url::to(['/indexpage']); ?>">Проект №3</a>
+                        <a class="aside__link-drop" href="<?= Url::to(['/portfolio']); ?>">Портфолио-макеты</a>
                     </li>
                 </ul>
             </li>

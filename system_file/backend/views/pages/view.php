@@ -29,7 +29,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
             'page_name',
             'title_head:ntext',
             'canonical',

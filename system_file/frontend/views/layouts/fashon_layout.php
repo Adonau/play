@@ -6,7 +6,6 @@
 use yii\helpers\Html;
 use frontend\assets\FashonAsset;
 use frontend\widgets\PreloadWidget;
-// use frontend\widgets\PreloadWidget;
 
 FashonAsset::register($this);
 ?>

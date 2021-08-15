@@ -10,13 +10,11 @@ use yii\widgets\Pjax;
 $this->title = 'Pages';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="pages-index">
+<div class="page-admin">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1 class="page-admin__title"><?= Html::encode($this->title) ?></h1>
 
-    <p>
-        <?= Html::a('Create Pages', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <?= Html::a('Create Pages', ['create'], ['class' => 'btn btn-success']) ?>
 
     <?php Pjax::begin(); ?>
     <?php echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -25,7 +23,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'itemOptions' => ['class' => 'item'],
         'itemView' => function ($model, $key, $index, $widget) {
-            return Html::a(Html::encode($model->id), ['view', 'id' => $model->id]);
+            $string = '_';
+            return
+                Html::a(Html::encode(strtok($model->page_name, $string)), ['view', 'id' => $model->id]);
         },
     ]) ?>
 

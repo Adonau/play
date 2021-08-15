@@ -32,10 +32,7 @@ AppAsset::register($this);
 
 <body class="main-body">
     <?php $this->beginBody() ?>
-    <?= HeaderWidget::widget() ?>
     <?= $content ?>
-
-    <?= PreloadWidget::widget() ?>
     <?php $this->endBody() ?>
 </body>
 

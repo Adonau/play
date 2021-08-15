@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const watch = require('gulp-watch');
-const autoprefixer = require('gulp-autoprefixer');
+const pref = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
 const min = require("gulp-clean-css");
 
@@ -14,11 +14,11 @@ gulp.task('sass-compail', function () {
 })
 
 
-gulp.task('autoprefixer', function () {
+gulp.task('pref', function () {
     return gulp.src('./css/main.css')
 
         .pipe(concat('main.css'))
-        .pipe(autoprefixer({
+        .pipe(pref({
             browsers: ['last 2 versions'],
             cascade: false
         }))
@@ -38,7 +38,7 @@ gulp.task('min', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch(['./scss/*.scss', './scss/base/*.scss', './scss/components/*.scss', './scss/layouts/*.scss', './scss/media/*.scss', './scss/pages/*.scss'], gulp.series('sass-compail','autoprefixer'))
+    gulp.watch(['./scss/*.scss', './scss/base/*.scss', './scss/components/*.scss', './scss/layouts/*.scss', './scss/media/*.scss', './scss/pages/*.scss'], gulp.series('sass-compail'))
 })
 
 // gulp.watch('./scss/**/*.scss', gulp.series('sass-compail', 'autoprefixer', 'min'))

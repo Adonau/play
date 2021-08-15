@@ -5,14 +5,14 @@
     flex-shrink: 0;
     
     width: 100%;
-    max-width: 1260px;
+    max-width: 1280px;
     height: 80px;
     
     &__social-icon {
         margin-right: 10px;
         &::before {
             font-family: fontawesome;
-            color: #101010;
+            color: #fff;
 
             transition: 0.3s all ease;
         }
@@ -38,6 +38,6 @@
 
     &__mail {
         font-family: "Ow-el";
-        color: #101010;
+        color: #fff;
     }
 }

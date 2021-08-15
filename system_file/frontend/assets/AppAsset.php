@@ -17,7 +17,10 @@ class AppAsset extends AssetBundle
     public $js = [
         'https://use.fontawesome.com/67b3feebd1.js',
         '//code.jquery.com/jquery-migrate-1.2.1.min.js',
+        'js/oliwpageslider.js',
+        'js/wheel-indicator.js',
         'js/slick.min.js',
+        'js/active-main.js',
         'js/main.js',
 
     ];

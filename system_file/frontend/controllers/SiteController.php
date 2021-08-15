@@ -67,7 +67,16 @@ class SiteController extends Controller
     {
         $indexpage = IndexPage::find()->all();
 
-        return $this->render('index', ['indexpage' => $indexpage]);
+        $port = Portfolio::find()->all();
+
+        $name = 'all_port';
+        $port_pages = Pages::find()->where('page_name = :page_name', [':page_name' => $name])->all();
+
+        return $this->render('index', [
+            'indexpage' => $indexpage,
+            'port' => $port,
+            'port_pages' => $port_pages,
+        ]);
     }
 
     public function actionAboutMe()
@@ -98,7 +107,7 @@ class SiteController extends Controller
         $this->layout = '@app/views/layouts/portfolio.php';
 
         $sel = 'game';
-        $port = Portfolio::find()->where('select_port = :select_port',[':select_port' => $sel])->all();
+        $port = Portfolio::find()->where('select_port = :select_port', [':select_port' => $sel])->all();
 
         $name = 'game_port';
         $port_pages = Pages::find()->where('page_name = :page_name', [':page_name' => $name])->all();
@@ -117,7 +126,7 @@ class SiteController extends Controller
         $this->layout = '@app/views/layouts/portfolio.php';
 
         $sel = "corp";
-        $port = Portfolio::find()->where('select_port = :select_port',[':select_port' => $sel])->all();
+        $port = Portfolio::find()->where('select_port = :select_port', [':select_port' => $sel])->all();
 
         $name = 'corp_port';
         $port_pages = Pages::find()->where('page_name = :page_name', [':page_name' => $name])->all();
@@ -136,7 +145,7 @@ class SiteController extends Controller
         $this->layout = '@app/views/layouts/portfolio.php';
 
         $sel = "land";
-        $port = Portfolio::find()->where('select_port = :select_port',[':select_port' => $sel])->all();
+        $port = Portfolio::find()->where('select_port = :select_port', [':select_port' => $sel])->all();
 
         $name = 'land_port';
         $port_pages = Pages::find()->where('page_name = :page_name', [':page_name' => $name])->all();
@@ -155,7 +164,7 @@ class SiteController extends Controller
         $this->layout = '@app/views/layouts/portfolio.php';
 
         $sel = "info";
-        $port = Portfolio::find()->where('select_port = :select_port',[':select_port' => $sel])->all();
+        $port = Portfolio::find()->where('select_port = :select_port', [':select_port' => $sel])->all();
 
         $name = 'info_port';
         $port_pages = Pages::find()->where('page_name = :page_name', [':page_name' => $name])->all();
